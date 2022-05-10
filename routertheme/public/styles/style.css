@@ -1,0 +1,68 @@
+*{
+    font-family: 'Poppins',Arial, Helvetica ;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+#about .container-fluid {
+    
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,45,162,1) 100%);
+}
+
+.refhover{
+    transition: 0.3s;
+}
+.refhover:hover{
+    opacity: 0.6;
+}
+
+.infohover{
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.infohover:hover {
+    box-shadow: 3px 3px 15px;
+}
+
+.crd-hvr{
+    transition: 0.5s;
+}
+
+.crd-hvr:hover{
+    transform: scale(0.9);
+    box-shadow: 3px 3px 15px;
+    
+}
+
+.btn-hvr{
+    transition-duration:0.5s;
+    background: linear-gradient(90deg, rgba(84,143,228,1) 25%, rgba(2,36,125,1) 90%);
+}
+.btn-hvr:hover{
+    background: linear-gradient(90deg, rgba(84,143,228,1) 0%, rgba(2,36,125,1) 100%); 
+}
+
+#yukari i{
+    color:#fff;
+    font-size:20px;
+    
+  }
+
+  
+#yukari{
+    display:none;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background: linear-gradient(90deg, rgba(60,60,60,1) 0%, rgba(104,57,175,1) 75%); 
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height: 50px;
+    border-radius:35px;
+    transition:all .3s ease;
+    cursor: pointer;
+}
