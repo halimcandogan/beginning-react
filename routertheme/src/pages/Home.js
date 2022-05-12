@@ -22,7 +22,7 @@ function Home() {
        <Hero title="Dijital Dünyada Sende Yerini Al" context="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reiciendis accusantium quaerat reprehenderit doloribus rerum." image="img/hero.png"/>
       <Titlebox title={t("hizmetlerimiz-box")} property="mt-5" />
       <Containerservices />
-      <Containerabout title={t("about-box")} context="&nbsp&nbsp Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
+      <Containerabout title={t("about-box")} context=" &nbsp;&nbsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
           voluptatibus sed odit nemo illum iusto ipsum veritatis nostrum! Lorem, ipsum dolor sit amet consectetur
           adipisicing elit. Autem quas laudantium perspiciatis beatae quis dignissimos enim reiciendis laboriosam
           cupiditate mollitia! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
