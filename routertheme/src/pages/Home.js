@@ -9,17 +9,20 @@ import Containerabout from "../compenents/indexAbout/Containerabout";
 import ContainerinfoBox from "../compenents/infoBox/ContainerinfoBox";
 import Containerreference from "../compenents/reference/Containerreference"
 import Containerindexblog from "../compenents/indexBlog/Containerindexblog";
+import { useTranslation } from 'react-i18next';
 
 
 
 function Home() {
+  const { t } = useTranslation();
+  
   return (
     <React.Fragment>
        <Navbar />
        <Hero title="Dijital Dünyada Sende Yerini Al" context="Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reiciendis accusantium quaerat reprehenderit doloribus rerum." image="img/hero.png"/>
-      <Titlebox title="Hizmetlerimiz" property="mt-5" />
+      <Titlebox title={t("hizmetlerimiz-box")} property="mt-5" />
       <Containerservices />
-      <Containerabout title="Biz Kimiz ?" context="&nbsp&nbsp Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
+      <Containerabout title={t("about-box")} context="&nbsp&nbsp Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
           voluptatibus sed odit nemo illum iusto ipsum veritatis nostrum! Lorem, ipsum dolor sit amet consectetur
           adipisicing elit. Autem quas laudantium perspiciatis beatae quis dignissimos enim reiciendis laboriosam
           cupiditate mollitia! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -28,9 +31,9 @@ function Home() {
           ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur nobis facilis. Atque quod labore suscipit
           numquam saepe et possimus. Lorem ipsum dolor sit amet."/>
      <ContainerinfoBox />
-     <Titlebox title="Referanslarımız" information="Bizimle Birlikte Büyüyenler" />
+     <Titlebox title={t("reference-box")} information={t("reference-info")} />
      <Containerreference />
-     <Titlebox title="Bloglarımız"  />
+     <Titlebox title={t("blog-box")}  />
      <Containerindexblog />
      <Footer />
      <Abovebutton />

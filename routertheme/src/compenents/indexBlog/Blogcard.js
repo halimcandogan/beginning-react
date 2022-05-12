@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+import Blogbutton from './Blogbutton';
 
 export default function Blogcard({image, title, context}) {
+  const {t} = useTranslation();
   return (
     <div>
           <div className="card border-0 blg-hvr">
@@ -8,7 +11,7 @@ export default function Blogcard({image, title, context}) {
             <div className="card-body border">
               <h5 className="card-title">{title}</h5>
               <p className="card-text">{context}</p>
-              <a className="btn btn-dark btn-hvr">Devamı</a>
+              <Blogbutton />
             </div>
           </div>
     </div>

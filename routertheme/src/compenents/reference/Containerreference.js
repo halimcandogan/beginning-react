@@ -3,10 +3,12 @@ import Logo from "./Logo"
 import Button from "./Button";
 import Titlebox from "../shared/Titlebox";
 import { Container, Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 
 
 export default function Containerreference(){
+    const { t } = useTranslation();
     return(
         <div>
   
@@ -17,7 +19,7 @@ export default function Containerreference(){
             <Col sm="12" lg="4" ><Logo image="img/microsoft.webp"/></Col>
             <Col sm="12" lg="4"><Logo image="img/beko.png"/></Col>
    </Row>
-        <Button context="Daha Fazlası İçin Tıklayınız"/>
+        <Button context={t("reference-button")}/>
     </Container>
         </div>
     )

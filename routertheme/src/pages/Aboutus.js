@@ -7,17 +7,19 @@ import Containerreference from "../compenents/reference/Containerreference"
 import Containerfooter from "../compenents/shared/Footer/Containerfooter"
 import Abovebutton from "../compenents/shared/Abovebutton"
 import Titlebox from "../compenents/shared/Titlebox";
+import { useTranslation } from 'react-i18next';
 
 
 
 
 function Aboutus(){
+    const {t} = useTranslation();
     return(
         <React.Fragment>
  
         <Navbar />
-        <Header title="Hakkımızda"/>
-        <AboutUs title="Biz Kimiz?" writing="&nbsp;&nbsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
+        <Header title={t("hakkimizda")}/>
+        <AboutUs title={t("about-box")} writing="&nbsp;&nbsp; Lorem ipsum dolor, sit amet consectetur adipisicing elit. A atque mollitia
               voluptatibus sed odit nemo illum iusto ipsum veritatis nostrum! Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Autem quas laudantium perspiciatis beatae quis dignissimos enim reiciendis laboriosam
               cupiditate mollitia! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -26,7 +28,7 @@ function Aboutus(){
               ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur nobis facilis. Atque quod labore suscipit
               numquam saepe et possimus. Lorem ipsum dolor sit amet." image="img/kimiz.jpg" />
         <ContainerinfoBox />
-        <Titlebox title="Referanslarımız" information="Bizimle Birlikte Büyüyenler" />
+        <Titlebox title={t("reference-box")} information={t("reference-info")} />
         <Containerreference />
         <Containerfooter />
       

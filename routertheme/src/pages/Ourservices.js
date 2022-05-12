@@ -5,12 +5,17 @@ import Header from "../compenents/shared/Header";
 import Containerservices from "../compenents/ourServices/Containerservices";
 import Containerfooter from "../compenents/shared/Footer/Containerfooter";
 import Abovebutton from "../compenents/shared/Abovebutton";
+import { useTranslation } from "react-i18next";
+
+
 
 function Ourservices() {
+           const {t} = useTranslation();
+
     return (
 <React.Fragment>
   <Navbar /> 
-  <Header title="Hizmetlerimiz"/>
+  <Header title={t("hizmetlerimiz")}/>
   <Containerservices />
   <Containerfooter />
   <Abovebutton />

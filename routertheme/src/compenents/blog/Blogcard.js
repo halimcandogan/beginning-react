@@ -1,6 +1,8 @@
 import React from 'react'
+import Blogbutton from '../indexBlog/Blogbutton'
 
 export default function Blogcard({ image, title, write }) {
+  
   return (
     <div>
         <div className="card border-0 ">
@@ -8,7 +10,7 @@ export default function Blogcard({ image, title, write }) {
             <div className="card-body">
               <h5 className="card-title fw-bold mt-3">{title}</h5>
               <p className="card-text">{write}</p>
-              <a href="web-tasarımla-ilgili-3-ipucu.html" className="btn btn-dark btn-hvr">Devamını Oku</a>
+              <Blogbutton />
             </div>
           </div>
     </div>

@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 
 export default function Navbar() {
+  const { t, i18 } = useTranslation();
+  const onChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+    event.preventDefault();
+  };
   return (
     <div>
          
@@ -16,20 +23,26 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
           <li className="nav-item">
-              <Link className="nav-link active fw-bold px-3" to="/" >Anasayfa</Link>
+              <Link className="nav-link active fw-bold px-3" to="/" >{t("anasayfa")}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active fw-bold px-3" to="/aboutus" >Hakkımızda</Link>
+              <Link className="nav-link active fw-bold px-3" to="/aboutus" >{t("hakkimizda")}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active fw-bold px-3" to="/ourservices" >Hizmetlerimiz</Link>
+              <Link className="nav-link active fw-bold px-3" to="/ourservices" >{t("hizmetlerimiz")}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active fw-bold px-3" to="/blog">Blog</Link>
+              <Link className="nav-link active fw-bold px-3" to="/blog">{t("blog")}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active fw-bold px-3" to="/contact">İletişim</Link>
+              <Link className="nav-link active fw-bold px-3" to="/contact">{t("iletişim")}</Link>
             </li>
+            <li className="nav-item " >
+            <select className="form-select" onChange={onChange}>
+              <option value="tr">Tr</option>
+              <option value="en">En</option>
+             </select>
+           </li>
           </ul>
         </div>
       </div>

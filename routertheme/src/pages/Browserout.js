@@ -11,6 +11,7 @@ import Yazılımnedır from "./Yazılımnedır";
 
 
 
+
 function Browserout(){
     return (
         <div>
